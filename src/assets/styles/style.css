@@ -51,6 +51,44 @@ img {
   height: auto;
 }
 
+/* Skeleton CSS */
+.skeleton_product_img {
+  width: 300px;
+  height: 400px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton_title_product {
+  width: 548px;
+  height: 68px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton_category_product,
+.skeleton_rating_product {
+  width: 149px;
+  height: 22px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton_desc_product {
+  width: 517px;
+  height: 163px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton_price_produk {
+  width: 100px;
+  height: 35px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.skeleton_button {
+  width: 50%;
+  height: 42px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
 section,
 .container {
   display: flex;
@@ -156,5 +194,20 @@ section,
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* animation */
+@keyframes pulse {
+  0% {
+    background-color: #94a3b8;
+  }
+
+  50% {
+    background-color: #cbd5e1;
+  }
+
+  100% {
+    background-color: #94a3b8;
   }
 }
