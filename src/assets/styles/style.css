@@ -1,0 +1,160 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  /*Color  */
+  --blue-color: #002772;
+  --pink-pastel-color: #fde2ff;
+  --main-black-color: #1e1e1e;
+  --purple-color: #720060;
+  --light-blue-color: #d6e6ff;
+  --semi-black-color: #3f3f3f;
+  --gray-color: #dcdcdc;
+  --white-color: #ffffff;
+
+  --body-font: "Inter", sans-serif;
+  --regular-weight: 400;
+  --bold-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section,
+.container {
+  display: flex;
+  margin: auto;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.bg_container {
+  position: absolute;
+  left: 0;
+  height: calc(100vh * 2 / 3);
+  width: 100vw;
+  background-color: var(--pink-pastel-color);
+  background-image: url(../img/bg-pattern.svg);
+  background-position: center;
+}
+
+.product_container {
+  background-color: var(--white-color);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 1034px;
+  padding: 3.125rem 3.5rem 2.875rem 3.25rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 21px 0px rgba(0, 0, 0, 0.2);
+}
+
+.left_side {
+  display: flex;
+  flex: 1;
+}
+
+.product_img {
+  object-fit: cover;
+  margin: auto;
+}
+
+.right_side {
+  flex: 2;
+}
+
+.title_product {
+  font-size: 1.75rem;
+  color: var(--purple-color);
+  margin-bottom: 1.563rem;
+}
+
+.product_categorys {
+  font-size: 1.125rem;
+  color: var(--semi-black-color);
+  padding-bottom: 11px;
+  margin-bottom: 1.625rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product_desc {
+  font-size: 1.25rem;
+  padding-bottom: 3.906rem;
+  margin-bottom: 0.969rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.price_product {
+  font-size: 1.75rem;
+  font-weight: var(--bold-weight);
+  color: var(--purple-color);
+  margin-bottom: 0.938rem;
+}
+
+.button_area {
+  display: flex;
+  gap: 19px;
+}
+
+.btn {
+  font-size: 1.3rem;
+  font-weight: var(--bold-weight);
+  padding: 9px;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.btn_primary {
+  color: white;
+  background-color: var(--purple-color);
+}
+
+.btn_secondary {
+  color: var(--purple-color);
+  background-color: var(--white-color);
+  border: 3px solid var(--purple-color);
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,25 +1,21 @@
 <template>
-  <ProductDisplay/>
+  <div class="bg_container"></div>
+  <section>
+    <ProductDisplay />
+  </section>
 </template>
 
 <script>
-import ProductDisplay from './components/ProductDisplay.vue';
+import ProductDisplay from "./components/ProductDisplay.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ProductDisplay
-  }
-}
+    ProductDisplay,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "../src/assets/styles/style.css";
 </style>
