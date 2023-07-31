@@ -1,8 +1,5 @@
 <template>
-  <div class="bg_container"></div>
-  <section>
-    <ProductDisplay />
-  </section>
+  <ProductDisplay />
 </template>
 
 <script>
